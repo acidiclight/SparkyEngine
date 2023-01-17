@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Silk.NET.GLFW" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Vulkan" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Vulkan.Extensions.KHR" Version="2.16.0" />
+      <PackageReference Include="Spirzza.Interop.Shaderc" Version="0.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Shaders\sparky.frag" />
+      <EmbeddedResource Include="Shaders\sparky.frag" />
+      <None Remove="Shaders\sparky.vert" />
+      <EmbeddedResource Include="Shaders\sparky.vert" />
+    </ItemGroup>
+
+</Project>

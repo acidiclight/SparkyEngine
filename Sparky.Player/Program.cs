@@ -1,0 +1,3 @@
+﻿using Sparky;
+
+Application.Run();
